@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enjoy your vacation: Book your room with us ">
+    <title>San Francisco Hotel Viareggio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+        <a href="index.html" class="pirveli"><img src="images/logo.webp" alt="hotel logo"></a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="index.html" target="_blank">Home</a>
+            <a href="about.html" target="_blank">About</a>
+            <a href="gallery.html" target="_blank">Services</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="booking.html" target="_blank">Booking</a>
+          </div>
+        </div>
+      </header>
+      <main>
+  
+      <section class="casa">
+        <video class="video-slide active" src="images/production ID_4782135.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/e3a8b15f-ee81a108.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/Pexels Videos 2169880.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/pexels-ahmed-abd-allah-5937356.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/03559d2a-f4726c9d.mp4" autoplay muted loop></video>
+        <div class="content active">
+          <h1>La tua vacanza
+            nel cuore della Toscana,
+            circondato da vigneti
+                e ulivi</h1>
+          <p>Nell'incantevole Maremma toscana, a pochi chilometri dal Monte Amiata e dalle splendide colline della Val d'Orcia, la posizione ideale per raggiungere i luoghi più interessanti della regione. Goditi un'esperienza unica, scopri le nostre tenute vinicole, assaggia i nostri vini e visita le nostre cantine.
+
+        </p>
+          <a href="about.html" target="_blank">Read More</a>
+        </div>
+        <div class="content">
+          <h1>fronte spiaggia</h1> 
+          <p>Il San Francisco è un moderno Hotel a Viareggio 3 stelle, situato fronte mare sul lungomare. Zona centralissima, di fronte ai migliori esercizi commerciali, bar e ristoranti.
+
+            
+            Spettacolare Roof Garden panoramica dove effettuare colazioni ed aperitivi con vista sulla città, colline e spiaggia.
+            
+            Il San Francisco è un Hotel a Viareggio che dispone di connessione Wi-Fi ultraveloce gratuita in tutto albergo. Comprese le 31 camere finemente arredate.
+            
+            La sua posizione è ideale anche per chi desidera un Hotel per il Carnevale di Viareggio, essendo dentro il circuito dove si tiene la manifestazione allegorica.</p>
+          <a href="spiaggia.html" target="_blank">Read More</a>
+        </div>
+        <div class="content">
+          <h1>la nostra galleria</h1>
+          <p>Scopri ogni angolo del nostro Hotel e ciò che lo circonda. Siamo nel cuore della Versilia in pieno centro a Viareggio a soli 50 mt dal mare.
+            Hotel Pet Friendly. Al San Francisco ti aspettano l'atmosfera intima delle 31 camere e l'accoglienza di una struttura a conduzione familiare che si ripete da ben 3 generazioni.</p>
+          <a href="gallery.html" target="_blank">Read More</a>
+        </div>
+        <div class="content">
+          <h1>I nostri servizi</h1>
+          <p>I nostri servizi: CONNESSIONE Wi-Fi Il nostro hotel dispone di connessione internet gratuita, per poter comunicare, lavorare o divertirsi e restare sempre connessi con il mondo. Una rete Wi-Fi copre infatti l’intera struttura, al fine di fornire ai nostri Ospiti collegamenti internet gratuiti e veloci. Servizio Informazioni</p>
+          <a href="services.html">Read More</a>
+        </div>
+        <div class="content">
+          <h1>CONDIZIONI GENERALI</h1>
+          <p>A garanzia della prenotazione è richiesta la carta di credito che potrà essere testata per verificarne l'autenticità e la validità.
+
+            Non vengono effettuati addebiti se non in caso di mancata cancellazione.
+            Nel caso in cui la carta di credito non sia valida, o laddove non risultino fondi sufficienti a garantire la prima notte di soggiorno, vi verrà richiesto di fornire una nuova garanzia.
+            
+            Qualora ciò non avvenga, la prenotazione non sarà ritenuta valida.<br> Il pagamento avverrà in albergo al momento del check-out tramite contanti, carta di credito o bonifico bancario.
+
+            In caso di partenza prima delle 07:00 di mattina, o nella notte, si chiede gentilmente il saldo la sera precedente.</p>
+          <a href="booking.html" target="_blank">book your room with us</a>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/VERONIKA831"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/?hl=en&__coig_login=1"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+          <div class="nav-btn active"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+        </div>
+      </section>
+    </main>
+   
+  
+      <script type="text/javascript">
+      //Javacript for responsive navigation menu
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
+  
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+      });
+  
+      //Javacript for video slider navigation
+      const btns = document.querySelectorAll(".nav-btn");
+      const slides = document.querySelectorAll(".video-slide");
+      const contents = document.querySelectorAll(".content");
+  
+      var sliderNav = function(manual){
+        btns.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+  
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+  
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        });
+  
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+      }
+  
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          sliderNav(i);
+        });
+      });
+      </script>
+    </body>
+</html>
+      
